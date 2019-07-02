@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Index from '@/Index'
 import ParentA from '@/views/ParentA'
 import SonA from '@/views/SonA'
+import ParentB from '@/views/ParentB'
 
 Vue.use(Router)
 
@@ -33,6 +34,12 @@ export default new Router({
       path: '/toSonA',
       name: 'SonA',
       component: SonA
+    },
+    {
+      // 父组件B
+      path: '/toParentB',
+      name: 'ParentB',
+      component: ParentB
     }
   ]
 })

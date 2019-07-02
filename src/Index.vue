@@ -7,7 +7,7 @@
                 <a href="javascript:;" @click="toParentA">第一种：父组件通过props的方式向子组件传递值</a>
             </li>
             <li>
-                <a href="javascript:;" @click="toSonA">去子组件A</a>
+                <a href="javascript:;" @click="toParentB">第二种：子组件通过events  $emit 向父组件传值，实际上就是子组件把自己的数据发送到父组件</a>
             </li>
         </ul>
     </div>
@@ -31,10 +31,10 @@ export default {
                 name: 'ParentA',
             })
         },
-        toSonA() {
+        toParentB() {
             let vm = this
             vm.$router.push({
-                name: 'SonA'
+                name: 'ParentB'
             })
         }
     }
