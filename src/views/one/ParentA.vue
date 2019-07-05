@@ -18,7 +18,7 @@
 
 <script>
 // 1.引入子组件
-import SonA from "@/views/SonA"
+import SonA from "@/views/one/SonA"
 export default {
     name: '',
     components: {

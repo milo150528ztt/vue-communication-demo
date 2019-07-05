@@ -9,6 +9,9 @@
             <li>
                 <a href="javascript:;" @click="toParentB">第二种：子组件通过events  $emit 向父组件传值，实际上就是子组件把自己的数据发送到父组件</a>
             </li>
+            <li>
+                <a href="javascript:;" @click="toBrotherABC">第三种：（暂时没明白）</a>
+            </li>
         </ul>
     </div>
 </template>
@@ -35,6 +38,11 @@ export default {
             let vm = this
             vm.$router.push({
                 name: 'ParentB'
+            })
+        },
+        toBrotherABC() {
+            this.$router.push({
+                name: 'BrotherABC'
             })
         }
     }

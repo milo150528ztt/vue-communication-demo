@@ -17,7 +17,7 @@
 
 <script>
 // 1.引入子组件
-import SonB from "@/views/SonB"
+import SonB from "@/views/two/SonB"
 export default {
     name: 'ParentB',
     components: {

@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Index from '@/Index'
-import ParentA from '@/views/ParentA'
-import SonA from '@/views/SonA'
-import ParentB from '@/views/ParentB'
+import ParentA from '@/views/one/ParentA'
+import SonA from '@/views/one/SonA'
+import ParentB from '@/views/two/ParentB'
+import BrotherABC from '@/views/third/BrotherABC'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/toParentB',
       name: 'ParentB',
       component: ParentB
+    },
+    { // 兄弟组件ABC
+      path: 'brotherABC',
+      name: 'BrotherABC',
+      component: BrotherABC
     }
   ]
 })
